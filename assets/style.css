@@ -5,16 +5,18 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #e5e5e5;
+    font-size:8pt;
+    margin: 0;
 }
 
 /*start of header style*/
 /*I want to make the background color green*/
 
 header {
-    padding: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(21, 60, 169);
+    padding-top: 80px;
+    padding-bottom: 0px;
+    background-color: rgb(9, 45, 206);
     color: whitesmoke;
 }
 
@@ -24,18 +26,130 @@ header h1{
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    background-color: #60A5FA;
+    padding-top: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    float:inline-start;
 }
-
-header nav ul {
+.links {
+    display: flex;
+    justify-content: center;
+    background-color: #1c80cd;
+}
+.links ul {
+    display: inline-flex;
+    /* flex-direction: row; */
     list-style-type: none;
 }
 
-header nav ul li {
+
+.links ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-right: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.bar-symbol {
+    color:black;
+}
+.mainContainer {
+    border: 2px dotted black;
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 800px;
+    
+}
+
+.leftSide {
+    border: 2px dotted red;
+    width: 50%;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profilePicContainer {
+    width: 175px;
+    height: 175px; 
+    margin-top: 10px;
+}
+
+.profilePic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactContainer {
+    width: 270px;
+    height: 80px;
+    margin-top: 20px;
+    border: 2px solid #1c80cd;
+}
+
+.contactHeader {
+    background-color: #1c80cd;
+    padding: 2px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactHeaderText {
+    font-weight:bold;
+    margin-bottom: 2px;
+}
+
+.columnContainer {
+    display: flex;
+    padding: 10px;
+}
+
+.contactText {
+    padding-bottom: 7px;
+    color: rgb(5, 5, 255)
+}
+
+.contactColumn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.resumeContainer {
+    width: 270px;
+    height: 80px;
+    margin-top: 20px;
+    border: 2px solid #1c80cd;
+}
+
+.resumeHeader {
+    background-color: #1c80cd;
+    padding: 2px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.resumeHeaderText {
+    font-weight:bold;
+    margin-bottom: 2px;
+}
+
+.rightSide {
+    border: 2px dotted green;
+    width: 50%;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+@media screen and (max-width: 480px) {
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+    }
 }
